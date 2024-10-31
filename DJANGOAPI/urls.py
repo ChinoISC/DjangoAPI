@@ -22,6 +22,7 @@ from api.login.login_view import (
     
     )
 from api.home.home_views import home_views
+from api.task.task_view import task_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,4 +32,5 @@ urlpatterns = [
     path('forgot/', forgot_view, name='forgot'),
     path('', home_views, name='home'),
     path('home/', home_views, name='home'),
+    path('task/', task_views, name='task'),
 ]
